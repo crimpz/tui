@@ -1,0 +1,32 @@
+let selected_room = room_list_state.selected().and_then(|index| {
+        chat_rooms
+            .as_ref()
+            .ok()
+            .and_then(|rooms| rooms.get(index).cloned())
+    });
+
+let room_detail = if let Some(room) = selected_room {
+        Table::new(vec![Row::new(vec![Cell::from(Span::raw(
+            room.name.clone(),
+        ))])])
+    } else {
+        Table::new(vec![Row::new(vec![Cell::from(Span::raw(
+            "No chat selected",
+        ))])])
+    }
+    .block(
+        Block::default()
+            .borders(Borders::ALL)
+            .style(Style::default().fg(Color::White))
+            .title("Chat Rooms")
+            .border_type(BorderType::Plain),
+    )
+    .widths(&[
+        Constraint::Percentage(30),
+        Constraint::Percentage(20),
+        Constraint::Percentage(20),
+        Constraint::Percentage(5),
+        Constraint::Percentage(20),
+    ]);
+
+

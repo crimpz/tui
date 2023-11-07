@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "username": "Dallas",
+    "text": "this is the text the user sent"
+  },
+  {
+    "id": 2,
+    "username": "Daniel",
+    "text": "this some more text"
+  },
+  {
+    "id": 1,
+    "username": "Dallas",
+    "text": "this is a response"
+  }
+]

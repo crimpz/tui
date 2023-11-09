@@ -273,6 +273,8 @@ fn render_home<'a>() -> Paragraph<'a> {
         Line::from(vec![Span::from("Press Esc to exit text entry mode at any time without sending a message.")]),
         Line::from(vec![Span::styled("Friends List:", Style::new().fg(Color::LightBlue))]),
         Line::from(vec![Span::from("Use the up and down arrow keys to navigate between friends.")]),
+        Line::from(vec![Span::from("For help, questions and bug reports, please contact me on github:")]),
+        Line::from(vec![Span::styled("github.com/crimpz", Style::new().fg(Color::LightBlue))]),
     ];
 
     let home = Paragraph::new(home_text)

@@ -1,7 +1,5 @@
-[
-  {
-    "id": 1,
-    "username": "Dallas",
-    "friends": ["Tom", "Dick", "Harry"]
-  }
-]
+{
+  "id": 1,
+  "username": "Dallas",
+  "friends": ["Tom", "Dick", "Harry"]
+}

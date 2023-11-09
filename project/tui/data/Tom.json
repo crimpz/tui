@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "username": "Dallas",
+    "text": "Hey are you there?"
+  },
+  {
+    "id": 2,
+    "username": "Tom",
+    "text": "Yeah, what's up?"
+  },
+  {
+    "id": 1,
+    "username": "Dallas",
+    "text": "Just making sure this works!"
+  }
+]

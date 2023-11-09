@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "username": "Dallas",
+    "text": "Did you go to lecture today?"
+  },
+  {
+    "id": 2,
+    "username": "Dick",
+    "text": "Nah, I didn't feel that good this morning."
+  },
+  {
+    "id": 1,
+    "username": "Dallas",
+    "text": "Dang, hope you feel better soon!"
+  }
+]

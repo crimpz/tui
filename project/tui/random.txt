@@ -29,4 +29,33 @@ let room_detail = if let Some(room) = selected_room {
         Constraint::Percentage(20),
     ]);
 
+KeyCode::Char('t') => {
+                    if active_menu_item as usize == MenuItem::ChatRooms as usize {
+                        text_input_mode = !text_input_mode;
+                        if text_input_mode {
+                            // Set the TextArea focus when entering text input mode
+                            textarea.set_focus(true);
+                        } else {
+                            // Clear focus when exiting text input mode
+                            textarea.set_focus(false);
+                        }
+                    }
+                }
 
+                KeyCode::Enter => {
+                    if text_input_mode {
+                        // Handle text input (you can save the text to your chat history)
+                        if let Some(input) = textarea.get_text() {
+                            // Add the input to your chat history or handle it as needed
+                            // Example: chat_history.push(input);
+                            // Clear the input field
+                            textarea.clear();
+                        }
+                    }
+                }
+
+                KeyCode::Esc => {
+                    // Exit text input mode when pressing Esc
+                    text_input_mode = false;
+                    textarea.set_focus(false);
+                }

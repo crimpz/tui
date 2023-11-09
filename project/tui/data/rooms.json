@@ -6,5 +6,9 @@
   {
     "id": 2,
     "name": "School Chat"
+  },
+  {
+    "id": 3,
+    "name": "Test Chat"
   }
 ]
